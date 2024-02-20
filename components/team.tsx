@@ -3,7 +3,7 @@ import TeamImage01 from '@/public/images/team-01.jpg'
 import TeamImage02 from '@/public/images/team-02.jpg'
 import TeamImage03 from '@/public/images/team-03.jpg'
 
-export default function Team() {  
+export default function Team() {
   return (
     <section className="bg-slate-100">
 

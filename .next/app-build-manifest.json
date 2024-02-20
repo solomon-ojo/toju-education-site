@@ -1,15 +1,20 @@
 {
   "pages": {
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
+    ],
+    "/(default)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(default)/page.js"
     ],
     "/(default)/layout": [
       "static/chunks/webpack.js",
@@ -17,20 +22,10 @@
       "static/css/app/(default)/layout.css",
       "static/chunks/app/(default)/layout.js"
     ],
-    "/(default)/page": [
+    "/(default)/wall-of-love/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(default)/page.js"
-    ],
-    "/(default)/support/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(default)/support/page.js"
-    ],
-    "/(default)/pricing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(default)/pricing/page.js"
+      "static/chunks/app/(default)/wall-of-love/page.js"
     ],
     "/(default)/about/page": [
       "static/chunks/webpack.js",
@@ -42,10 +37,21 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(default)/blog/page.js"
     ],
-    "/(default)/wall-of-love/page": [
+    "/(default)/blog/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(default)/wall-of-love/page.js"
+      "static/chunks/app/(default)/blog/[slug]/page.js"
+    ],
+    "/(auth)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/layout.css",
+      "static/chunks/app/(auth)/layout.js"
+    ],
+    "/(auth)/signin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/signin/page.js"
     ]
   }
 }
